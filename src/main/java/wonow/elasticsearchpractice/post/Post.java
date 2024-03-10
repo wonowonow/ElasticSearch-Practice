@@ -20,4 +20,9 @@ public class Post {
 
     @Column(nullable = false, columnDefinition = "TEXT")
     private String content;
+
+    public Post(CreatingPostReq request) {
+        this.title = request.title();
+        this.content = request.content();
+    }
 }
