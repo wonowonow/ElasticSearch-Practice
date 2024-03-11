@@ -8,3 +8,11 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+
+  main:
+    allow-bean-definition-overriding: true
